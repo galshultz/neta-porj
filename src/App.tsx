@@ -30,6 +30,7 @@ export default function App() {
 				<CssBaseline />
 				<Grid
 					item
+					// position='fixed'
 					xs={false}
 					sm={3}
 					md={3}
@@ -44,14 +45,24 @@ export default function App() {
 						backgroundPosition: 'center',
 					}}
 				/>
-				<Grid item xs={12} sm={9} md={9} component={Paper} elevation={6} square>
+				<Grid
+					item
+					xs={12}
+					sm={9}
+					md={9}
+					component={Paper}
+					elevation={6}
+					square
+					sx={{ display: 'flex', justifyContent: 'center' }}
+				>
 					<Box
 						sx={{
-							my: 8,
-							mx: 4,
 							display: 'flex',
 							flexDirection: 'column',
 							alignItems: 'center',
+							my: 8,
+							mx: 4,
+							maxWidth: '60%',
 						}}
 					>
 						<Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -84,9 +95,122 @@ export default function App() {
 								type='password'
 								id='password'
 							/>
-							<FormControlLabel
-								control={<Checkbox value='remember' color='primary' />}
-								label='Remember me'
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
+							/>
+							<TextField
+								margin='normal'
+								required
+								fullWidth
+								name='password'
+								label='Password'
+								type='password'
+								id='password'
 							/>
 							<Button
 								type='submit'
@@ -94,20 +218,8 @@ export default function App() {
 								variant='contained'
 								sx={{ mt: 3, mb: 2 }}
 							>
-								Sign In
+								Submit
 							</Button>
-							<Grid container>
-								<Grid item xs>
-									<Link href='#' variant='body2'>
-										Forgot password?
-									</Link>
-								</Grid>
-								<Grid item>
-									<Link href='#' variant='body2'>
-										{"Don't have an account? Sign Up"}
-									</Link>
-								</Grid>
-							</Grid>
 						</Box>
 					</Box>
 				</Grid>
